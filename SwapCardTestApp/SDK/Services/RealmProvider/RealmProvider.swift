@@ -23,8 +23,3 @@ final class RealmProvider: IRealmProvider {
         return nil
     }
 }
-
-//extension Realm {
-//    func write(completion: )
-//}
-
