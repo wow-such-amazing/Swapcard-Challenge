@@ -1,0 +1,60 @@
+/*
+ Localizable.strings
+ BeautyFull
+ 
+ Created by Taras Nikulin on 04.01.2018.
+ Copyright © 2018 Taras Nikulin. All rights reserved.
+ */
+
+//Common
+"close" = "Close";
+"ok" = "Ok";
+"cancel" = "Cancel";
+
+//Module titles
+"usersList" = "Users list";
+
+//Fail cell
+"failCellTitle" = "Some error occured";
+"failCellButton" = "Retry";
+
+//RandomUser section title
+"personalInfo" = "Personal";
+"contactInfo" = "Contact";
+"privateUserInfo" = "Private";
+"pictureInfo" = "Picture links";
+
+//RandomUser default field values
+"propertyIsEmpty" = "Property is empty";
+
+//RandomUser field names
+"gender" = "Gender";
+"nameTitle" = "Title";
+"nameFirst" = "Firstname";
+"nameLast" = "Lastname";
+"locationStreet" = "Street";
+"locationCity" = "City";
+"locationState" = "State";
+"locationPostcode" = "Postcode";
+"email" = "Email";
+"loginUsername" = "Username";
+"loginPassword" = "Password";
+"loginSalt" = "Salt";
+"loginMd5" = "MD5";
+"loginSha1" = "SHA1";
+"loginSha256" = "SHA256";
+"dob" = "Birthday";
+"registered" = "Registration date";
+"phone" = "Phone";
+"cell" = "Cell";
+"idName" = "Id name";
+"idValue" = "Id value";
+"pictureLarge" = "Large avatar source";
+"pictureMedium" = "Medium avatar source";
+"pictureThumbnail" = "Thumbnail avatar source";
+"nat" = "Nationality";
+
+//Errors
+"commonError" = "Oh no! We received some error 😭";
+"errorTitle" = "Error";
+

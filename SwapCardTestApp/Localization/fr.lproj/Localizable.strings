@@ -1,0 +1,60 @@
+/*
+ Localizable.strings
+ BeautyFull
+ 
+ Created by Taras Nikulin on 04.01.2018.
+ Copyright © 2018 Taras Nikulin. All rights reserved.
+ */
+
+//Common
+"close" = "Fermer";
+"ok" = "Ok";
+"cancel" = "Annuler";
+
+//Module titles
+"usersList" = "Liste";
+
+//Fail cell
+"failCellTitle" = "Une erreur est survenue";
+"failCellButton" = "Réessayer";
+
+//RandomUser section title
+"personalInfo" = "Personnel";
+"contactInfo" = "Contact";
+"privateUserInfo" = "Privé";
+"pictureInfo" = "Liens d'image";
+
+//RandomUser default field values
+"propertyIsEmpty" = "La propriété est vide";
+
+//RandomUser field names
+"gender" = "Gender";
+"nameTitle" = "Titre";
+"nameFirst" = "Prénom";
+"nameLast" = "Nom";
+"locationStreet" = "Rue";
+"locationCity" = "Ville";
+"locationState" = "Etat";
+"locationPostcode" = "Code postal";
+"email" = "Email";
+"loginUsername" = "Nom d'utilisateur";
+"loginPassword" = "Mot de passe";
+"loginSalt" = "Sel";
+"loginMd5" = "MD5";
+"loginSha1" = "SHA1";
+"loginSha256" = "SHA256";
+"dob" = "Anniversaire";
+"registered" = "Date d'enregistrement";
+"phone" = "Téléphone";
+"cell" = "Cell";
+"idName" = "Nom de l'identifiant";
+"idValue" = "Valeur de l'identifiant";
+"pictureLarge" = "Grande source d'avatar";
+"pictureMedium" = "Source de l'avatar moyen";
+"pictureThumbnail" = "Source de l'avatar miniature";
+"nat" = "Nationalité";
+
+//Errors
+"commonError" = "Oh non! Nous avons reçu une erreur 😭";
+"errorTitle" = "Erreur";
+
