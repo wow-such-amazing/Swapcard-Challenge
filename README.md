@@ -1,3 +1,3 @@
 # SwapCardTestApp
 
-Run pod install before building an application :) 
+Run pod install before building the application :) 
