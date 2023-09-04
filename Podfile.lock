@@ -1,13 +1,13 @@
 PODS:
-  - Alamofire (4.6.0)
-  - AlamofireImage (3.3.0):
-    - Alamofire (~> 4.5)
-  - EasyDi (1.4.0)
-  - Realm (3.1.1):
-    - Realm/Headers (= 3.1.1)
-  - Realm/Headers (3.1.1)
-  - RealmSwift (3.1.1):
-    - Realm (= 3.1.1)
+  - Alamofire (5.8.0)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - EasyDi (1.6.1)
+  - Realm (10.42.1):
+    - Realm/Headers (= 10.42.1)
+  - Realm/Headers (10.42.1)
+  - RealmSwift (10.42.1):
+    - Realm (= 10.42.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -15,13 +15,21 @@ DEPENDENCIES:
   - EasyDi
   - RealmSwift
 
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - EasyDi
+    - Realm
+    - RealmSwift
+
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
-  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
-  EasyDi: 84cfe04e906c0f463b1b1d76ed4be3db446f9702
-  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
-  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
+  EasyDi: 3d7d4c0d3ad2d78b3ff22d4755590d32945f69cc
+  Realm: f433b80a05f68575e88364d6fcc6234965ccc5af
+  RealmSwift: 757e1416e2314f7e1543abdb2aa65b311d7b6545
 
-PODFILE CHECKSUM: 3e31d6e6eb54124c8590e61a05dff9841826c852
+PODFILE CHECKSUM: 915d4c88cedbb664adcc51cdc87e995d0d10dca8
 
-COCOAPODS: 1.4.0.rc.1
+COCOAPODS: 1.12.1

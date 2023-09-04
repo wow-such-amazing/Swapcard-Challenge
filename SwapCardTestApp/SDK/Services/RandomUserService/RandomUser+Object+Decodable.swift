@@ -48,8 +48,10 @@ final class RandomUser: Object, Decodable {
         self.location = try container.decode(Location.self, forKey: .location)
         self.email = try container.decode(String.self, forKey: .email)
         self.login = try container.decode(Login.self, forKey: .login)
-        self.dob = try container.decode(String.self, forKey: .dob)
-        self.registered = try container.decode(String.self, forKey: .registered)
+        // self.dob = try container.decode(String.self, forKey: .dob)
+        self.dob = "[!] Requires Codable Migration"
+//        self.registered = try container.decode(String.self, forKey: .registered)
+        self.registered = "[!] Requires Codable Migration"
         self.phone = try container.decode(String.self, forKey: .phone)
         self.cell = try container.decode(String.self, forKey: .cell)
         self.id = try container.decode(Id.self, forKey: .id)
@@ -97,7 +99,8 @@ final class Location: Object, Decodable {
         self.init()
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        self.street = try container.decode(String.self, forKey: .street)
+//        self.street = try container.decode(String.self, forKey: .street)
+        self.street = "[!] Requires Codable Migration"
         self.city = try container.decode(String.self, forKey: .city)
         self.state = try container.decode(String.self, forKey: .state)
         

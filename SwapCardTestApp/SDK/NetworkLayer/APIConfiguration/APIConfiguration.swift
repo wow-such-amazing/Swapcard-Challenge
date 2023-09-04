@@ -55,12 +55,14 @@ extension APIConfiguration {
         }
         
         // httpBody
-        var httpBody: [String: String] = [:]
-        self.httpBody.forEach { httpBody[$0.field] = $0.value }
-        do {
-            urlRequest.httpBody = try JSONSerialization.data(withJSONObject: httpBody, options: [])
-        } catch {
-            print(AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error)))
+        if self.httpBody.isEmpty == false {
+            var httpBody: [String: String] = [:]
+            self.httpBody.forEach { httpBody[$0.field] = $0.value }
+            do {
+                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: httpBody, options: [])
+            } catch {
+                print(AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error)))
+            }
         }
         
         return urlRequest

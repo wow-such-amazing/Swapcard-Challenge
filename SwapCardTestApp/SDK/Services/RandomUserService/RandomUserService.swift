@@ -20,13 +20,16 @@ final class RandomUserService: IRandomUserService {
     func loadUsers(count: Int, completion: @escaping ResultClosure<[RandomUser]>) {
         let parameters = [RequestParameter(field: "results", value: "\(count)")]
         let request = GetUsersConfiguration(parameters: parameters)
-        Alamofire.request(request).responseJSON { (result) in
-            guard result.error == nil, let data = result.data else {
-                completion(.error(Loc.commonError))
-                return
+        AF.request(request).responseDecodable(of: BaseResponse<[RandomUser]>.self) { response in
+            switch response.result {
+            case .success(let response):
+                self.save(users: response.results, completion: completion)
+            case .failure(let error):
+                print("Debug: LoadUsers Failure - \(error)")
+                completion(
+                    .error(Loc.commonError)
+                )
             }
-            let users = self.decode(data: data)
-            self.save(users: users, completion: completion)
         }
     }
 

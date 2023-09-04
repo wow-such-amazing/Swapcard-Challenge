@@ -15,8 +15,8 @@ protocol IImageService {
 
 final class ImageService: IImageService {
     func getImageBy(urlString: String, completion: @escaping ResultClosure<UIImage>) {
-        Alamofire.request(urlString).responseImage { response in
-            guard let image = response.result.value else {
+        AF.request(urlString).responseImage { response in
+            guard let image = try? response.result.get() else {
                 completion(.error(Loc.commonError))
                 return
             }

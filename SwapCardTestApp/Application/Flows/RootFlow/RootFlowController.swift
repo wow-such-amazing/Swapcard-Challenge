@@ -37,7 +37,28 @@ class RootFlowController: UIViewController, UsersFlowControllerDelegate {
     
     func embed(_ viewController: UIViewController) {
         self.childFlowController = viewController
-        self.present(viewController, animated: false, completion: nil)
+        
+        self.addChildViewController(viewController)
+        
+        viewController.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(viewController.view)
+        NSLayoutConstraint.activate([
+            viewController.view.leadingAnchor.constraint(
+                equalTo: self.view.leadingAnchor
+            ),
+            viewController.view.topAnchor.constraint(
+                equalTo: self.view.topAnchor
+            ),
+            viewController.view.trailingAnchor.constraint(
+                equalTo: self.view.trailingAnchor
+            ),
+            viewController.view.bottomAnchor.constraint(
+                equalTo: self.view.bottomAnchor
+            ),
+        ])
+        
+        viewController.didMove(toParentViewController: self)
     }
     
     // MARK: UsersFlowControllerDelegate
